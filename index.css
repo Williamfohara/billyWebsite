@@ -77,12 +77,6 @@ body {
   margin-bottom: 0.5rem;
 }
 
-.profile-photo {
-  max-width: 200px;
-  border-radius: 8px;
-  border: 1px solid #e0e0e0;
-}
-
 /* ───────────── Projects Grid ───────────── */
 .projects-grid {
   display: grid;
@@ -186,4 +180,15 @@ body {
   margin-left: 1.5rem; /* shifts the whole list right */
   padding-left: 1rem; /* extra room so bullets don’t touch text */
   list-style-position: inside; /* keeps bullets inside the margin */
+}
+
+/* ───────────  PROFILE PHOTO  ─────────── */
+.profile-photo {
+  position: absolute;
+  top: 50px;
+  right: 275px;
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 4px;
 }
