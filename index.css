@@ -1,64 +1,95 @@
 body {
   margin: 0;
-  padding: 0;
-  background: #1e1e1e;
-  color: #00ffcc;
-  font-family: "Press Start 2P", monospace;
-  image-rendering: pixelated;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+.container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  height: 100vh;
 }
 
-header {
-  background: #000000;
-  width: 100%;
-  padding: 16px 0;
-  text-align: center;
-  border-bottom: 4px solid #00ffcc;
+.sidebar {
+  width: 220px;
+  background-color: #1e1e1e;
+  color: #fff;
+  padding: 40px 20px;
+  box-sizing: border-box;
 }
 
-h1 {
+.sidebar h2 {
+  font-size: 20px;
+  margin-bottom: 40px;
+  line-height: 1.4;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
   margin: 0;
-  font-size: 16px;
 }
 
-.avatar {
-  width: 120px;
-  height: 120px;
-  margin: 20px 0;
-  image-rendering: pixelated;
-  border: 4px solid #00ffcc;
+.sidebar ul li {
+  margin-bottom: 20px;
 }
 
-nav {
-  margin: 20px 0;
-}
-
-nav a {
-  color: #00ffcc;
+.sidebar ul li a {
+  color: #61dafb;
   text-decoration: none;
-  margin: 0 10px;
-  border: 2px solid #00ffcc;
-  padding: 8px 12px;
-  display: inline-block;
+  font-weight: 500;
 }
 
-nav a:hover {
-  background: #00ffcc;
-  color: #000;
+.sidebar ul li a:hover {
+  text-decoration: underline;
 }
 
-section {
-  max-width: 600px;
-  padding: 20px;
-  background: #111;
-  margin: 20px;
-  border: 2px dashed #00ffcc;
+.content {
+  flex: 1;
+  padding: 60px;
+  overflow-y: auto;
 }
 
-footer {
-  margin: 30px 0;
-  font-size: 10px;
-  color: #888;
+.content h1 {
+  color: #3a77b1;
+  font-size: 28px;
+  margin-top: 0;
+}
+
+.content ul {
+  padding-left: 20px;
+}
+
+.content ul li {
+  margin-bottom: 10px;
+}
+
+.content a {
+  color: #3a77b1;
+  text-decoration: none;
+}
+
+.content a:hover {
+  text-decoration: underline;
+}
+
+.photo-placeholder {
+  width: 180px;
+  height: 180px;
+  border: 2px dashed #aaa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  font-size: 14px;
+  color: #777;
+}
+
+.profile-photo {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-top: 40px;
 }
