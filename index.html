@@ -3,57 +3,80 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Billy O'Hara</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Billy O'Hara – Product Builder</title>
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
     <div class="container">
+      <!-- ───────────── Sidebar ───────────── -->
       <aside class="sidebar">
-        <h2>Billy<br />O'Hara</h2>
+        <h2 class="logo">Billy<br />O'Hara</h2>
         <nav>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Essays</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Good Intentions</a></li>
-            <li><a href="#">Bio</a></li>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="#essays">Essays</a></li>
+            <!-- changed ↓ -->
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="bio.html">Bio</a></li>
           </ul>
         </nav>
       </aside>
 
+      <!-- ───────────── Main Content ───────────── -->
       <main class="content">
-        <h1>Billy O'Hara</h1>
-        <p>
-          Hello! I'm a product-minded builder with a background in finance,
-          comedy, and creative tools.
-        </p>
-        <p>
-          I'm passionate about turning ideas into real systems — from AI-powered
-          history maps to 800-person live shows. I care deeply about user
-          experience, storytelling, and community building.
-        </p>
-        <p>
-          I studied Information Systems and Finance at the University of Utah.
-        </p>
+        <div class="text">
+          <h1>Billy O'Hara</h1>
+          <p>
+            Hello! I'm a product builder with roots in finance, software, and
+            history.
+          </p>
+          <p>
+            I love combining ideas from different fields into something useful
+            for others.
+          </p>
+          <p>
+            My focus is on turning complex ideas into straightforward, useful
+            products and experiences. I aim to create tools that are intuitive,
+            encourage people to connect, and generate the revenue necessary to
+            fund the next wave of innovation.
+          </p>
+          <p>
+            I studied Information Systems and Finance at the University of Utah.
+          </p>
 
-        <p>You can:</p>
-        <ul>
-          <li>Follow me on <a href="#">X</a></li>
-          <li>Read my writing on <a href="#">Medium</a></li>
-          <li>View a list of <a href="#">projects I'm working on</a></li>
-          <li>
-            Get in touch or <a href="mailto:billlyoharaa@gmail.com">email me</a>
-          </li>
-        </ul>
-
-        <p>Thank you!</p>
+          <p>You can:</p>
+          <ul class="links">
+            <li>
+              <a href="https://twitter.com/billchain333" target="_blank"
+                >Follow me on X</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://substack.com/@billyfo?utm_source=user-menu"
+                target="_blank"
+                >Read my writing on Substack</a
+              >
+            </li>
+            <!-- changed ↓ -->
+            <li>
+              <a href="projects.html">View a list of projects I'm working on</a>
+            </li>
+            <li>
+              <a>Get in touch via email: billlyoharaa@gmail.com</a>
+            </li>
+          </ul>
+          <p>Thank you!</p>
+        </div>
 
         <img
           class="profile-photo"
           src="billyHeadshot.jpeg"
-          alt="Billy O'Hara"
+          alt="Billy O'Hara headshot"
         />
       </main>
     </div>
+
+    <script src="script.js" defer></script>
   </body>
 </html>
